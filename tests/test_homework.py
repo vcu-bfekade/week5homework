@@ -27,8 +27,7 @@ def test_key_with_the_longest_value():
     """A little trickier.   Which KEY has the 'longest' value associated with it? """
 
     assert (
-        homework.longest_value_key(
-            {"dog": "cat", "a": "asdfasdfasdfasdfasdf"}) == "a"
+        homework.longest_value_key({"dog": "cat", "a": "asdfasdfasdfasdfasdf"}) == "a"
     )
     assert homework.longest_value_key({}) is None
     assert homework.longest_value_key(None) is None
