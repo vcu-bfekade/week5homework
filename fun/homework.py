@@ -6,7 +6,7 @@ def find_greatest_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the largest number in the list.
     """
-    print(max(incoming_list))
+    return(max(incoming_list))
 
 
 def find_least_number(incoming_list):
@@ -14,8 +14,8 @@ def find_least_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the smallest/least number in the list.
     """
-    print(min(incoming_list))
-    
+    return(min(incoming_list))
+
 
 
 def add_list_numbers(incoming_list):
@@ -23,7 +23,13 @@ def add_list_numbers(incoming_list):
     Required parameter, incoming_list, should be a list.
     Add all the values together and return it.
     """
-    print(sum(incoming_list))
+    list_sum = 0
+    if incoming_list is None or len(incoming_list) == 0:
+        list_sum = None
+    else:
+        list_sum = sum(incoming_list)
+
+    return(list_sum)
 
 
 
@@ -32,5 +38,19 @@ def longest_value_key(incoming_dict):
     Required parameter, incoming_dict, should be a dict.
     Find the KEY that has a value with the highest length, use the len() function
     """
-    print(max(len(incoming_dict)))
+    d = incoming_dict
+    
+    if d is None or len(d) == 0:
+        return None
+    else:
+        longest_key = ''
+        longest_value = ''
+    for key, value in d.items():
+        if len(value) > len(d.items):
+            longest_key = key
+            longest_value = value
+
+        return longest_key
+
+
 
