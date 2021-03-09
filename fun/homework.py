@@ -28,7 +28,7 @@ def add_list_numbers(incoming_list):
         list_sum = None
     else:
         list_sum = sum(incoming_list)
-
+        
     return(list_sum)
 
 
@@ -39,7 +39,6 @@ def longest_value_key(incoming_dict):
     Find the KEY that has a value with the highest length, use the len() function
     """
     d = incoming_dict
-    
     if d is None or len(d) == 0:
         return None
     else:
