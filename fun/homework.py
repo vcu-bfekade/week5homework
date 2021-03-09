@@ -43,3 +43,4 @@ def longest_value_key(incoming_dict):
             return 0
         else:
             return max(highest, key=lambda m: len(highest[m]))
+    return 0
