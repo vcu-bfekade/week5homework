@@ -8,7 +8,7 @@ def find_greatest_number(incoming_list):
     """
     maxiumum = max(incoming_list)
     return maxiumum
-    pass
+   
 
 def find_least_number(incoming_list):
     """
@@ -17,7 +17,6 @@ def find_least_number(incoming_list):
     """
     least = min(incoming_list)
     return least
-    pass
 
 def add_list_numbers(incoming_list):
     """
@@ -30,7 +29,7 @@ def add_list_numbers(incoming_list):
     else:
         list_sum = sum(incoming_list)
     return list_sum
-    pass
+    
 
 
 def longest_value_key(incoming_dict):
@@ -42,4 +41,3 @@ def longest_value_key(incoming_dict):
     d = None
     biggest = max(d, key = len)
     return biggest
-
