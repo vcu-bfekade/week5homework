@@ -23,7 +23,6 @@ def add_list_numbers(incoming_list):
     Required parameter, incoming_list, should be a list.
     Add all the values together and return it.
     """
-    list_sum = 0
     if incoming_list is None or len(incoming_list) == 0:
         list_sum = None
     else:
