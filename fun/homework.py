@@ -40,7 +40,7 @@ def longest_value_key(incoming_dict):
     highest = incoming_dict
     if highest is not None:
         if len(highest) == 0:
-            return 0
+            return None
         else:
             return max(highest, key=lambda m: len(highest[m]))
-    return 0
+    return None
